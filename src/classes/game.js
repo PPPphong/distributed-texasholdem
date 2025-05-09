@@ -236,15 +236,15 @@ const Game = function (name, host) {
 
   this.getStageName = () => {
     if (this.roundData.bets.length == 1) {
-      return 'Pre-Flop';
+      return '翻牌前';
     } else if (this.roundData.bets.length == 2) {
-      return 'Flop';
+      return '翻牌圈';
     } else if (this.roundData.bets.length == 3) {
-      return 'Turn';
+      return '转牌圈';
     } else if (this.roundData.bets.length == 4) {
-      return 'River';
+      return '河牌圈';
     } else {
-      return 'Error';
+      return '错误阶段';
     }
   };
 
