@@ -15,14 +15,14 @@
 </head>
 
 <body>
-	<header>
-		<div class="navbar-fixed" id="navbar-ptwu">
-			<nav class="grey darken-4" role="navigation" id="navbar">
-				<a href="https://peterlwu.com" class="brand-logo center"><img class="responsive-img hover-item-2"
-						src="https://i.imgur.com/aICJn1m.png" width="64" height="64"></img></a>
-			</nav>
-		</div>
-	</header>
+<!--	<header>-->
+<!--		<div class="navbar-fixed" id="navbar-ptwu">-->
+<!--			<nav class="grey darken-4" role="navigation" id="navbar">-->
+<!--				<a href="https://peterlwu.com" class="brand-logo center"><img class="responsive-img hover-item-2"-->
+<!--						src="https://i.imgur.com/aICJn1m.png" width="64" height="64"></img></a>-->
+<!--			</nav>-->
+<!--		</div>-->
+<!--	</header>-->
 	<div id="gameDiv">
 		<h4 class="white-text">Texas Hold 'Em Game</h4>
 		<div class="row">
@@ -75,17 +75,15 @@
 			<div class="col card hoverable s12 m4">
 				<form>
 					<div class="card-content">
-						<span class="card-title black-text">Texas Hold &apos;Em Poker - Distributed</span>
-						<p>Welcome to Texas Hold &apos;Em Poker! Host a game and give the code to friends so they can join and play.
+						<span class="card-title black-text">Texas Poker</span>
+						<p>欢迎来到Texas Poker！主持一个游戏，并将代码交给朋友，这样他们就可以加入并玩了。
 						</p>
 					</div>
 					<div class="card-action center-align">
 						<a id="hostButton" class="btn-large waves-effect waves-light indigo darken-3 white-text modal-trigger"
-							href="#hostModal">Host
-							Game</a>
+							href="#hostModal">主持游戏</a>
 						<a id="joinButton" class="btn-large waves-effect waves-light indigo darken-3 white-text modal-trigger"
-							href="#joinModal">Join
-							Game</a>
+							href="#joinModal">加入游戏</a>
 					</div>
 				</form>
 			</div>
@@ -93,48 +91,46 @@
 	</div>
 	<div id="hostModal" class="modal">
 		<div class="modal-content">
-			<h4>Host Game</h4>
+			<h4>主持游戏</h4>
 			<div id="hostModalContent">
-				<p>Enter your name, and then we'll give you a code which you can give to your friends as the host.</p>
+				<p>输入您的姓名，然后我们会给您一个代码，您可以将其作为主机提供给您的朋友。</p>
 				<div class="input-field col s12">
-					<label for="name">Name</label>
+					<label for="name">昵称</label>
 					<input type="text" name="name" id="hostName-field" required />
 				</div>
 				<button onclick=beginHost() type="submit"
-					class="waves-effect waves-light indigo darken-3 white-text btn-flat">Get
-					Code</button>
+					class="waves-effect waves-light indigo darken-3 white-text btn-flat">获取代码</button>
 			</div>
 			<div id="playersNames"></div>
 			<div id="startGameArea"></div>
 		</div>
 		<div class="modal-footer">
-			<a class="modal-close waves-effect waves-light btn-flat">CLOSE</a>
+			<a class="modal-close waves-effect waves-light btn-flat">关闭</a>
 		</div>
 	</div>
 	</div>
 
 	<div id="joinModal" class="modal">
 		<div class="modal-content">
-			<h4>Join Game</h4>
+			<h4>加入游戏</h4>
 			<div id="joinModalContent">
-				<p>Enter the your name and the code provided by the host to join their room:</p>
+				<p>输入您的姓名和房东提供的代码以加入他们的房间：</p>
 				<div class="input-field col s12">
-					<label for="name">Name</label>
+					<label for="name">昵称</label>
 					<input type="text" name="name" id="joinName-field" required="required" />
 				</div>
 				<div class="input-field col s12">
-					<label for="code">Code</label>
+					<label for="code">代码</label>
 					<input type="text" name="code" id="code-field" required="required" />
 				</div>
 				<button onclick=joinRoom() type="submit"
-					class="waves-effect waves-light indigo darken-3 white-text btn-flat">Join
-					Game</button>
+					class="waves-effect waves-light indigo darken-3 white-text btn-flat">加入房间</button>
 			</div>
 			<div id="playersNamesJoined"></div>
 			<div id="startGameAreaDisconnectSituation"></div>
 		</div>
 		<div class="modal-footer">
-			<a href="#!" class="modal-close waves-effect waves-light btn-flat">CLOSE</a>
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">关闭</a>
 		</div>
 	</div>
 
@@ -180,10 +176,10 @@
 			<a href="#!" class="modal-close waves-effect waves-light btn-flat">CLOSE</a>
 		</div>
 	</div>
-	<footer class="page-footer white">
-		<div class="container footer-c">
-			<b>© 2020 - Peter Wu. <a href="https://github.com/ptwu/distributed-texasholdem">GitHub Repository</a></b><br><br>
-	</footer>
+<!--	<footer class="page-footer white">-->
+<!--		<div class="container footer-c">-->
+<!--			<b>© 2020 - Peter Wu. <a href="https://github.com/ptwu/distributed-texasholdem">GitHub Repository</a></b><br><br>-->
+<!--	</footer>-->
 
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.0/socket.io.min.js"></script>
