@@ -4,9 +4,6 @@
 ![1.0.0](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![CI](https://github.com/ptwu/distributed-texasholdem/workflows/CI/badge.svg)
 
-Play at https://distributed-texasholdem.onrender.com. Note that the site has to cold start because I'm a
-college student who doesn't want to pay for anything beyond the free plan.
-
 Using `socket.io`, `Node.js`, and `express` to make a distributed poker game. Allows for multiple
 gameplay rooms simultaneously across different devices.
 
@@ -28,8 +25,6 @@ gameplay rooms simultaneously across different devices.
 # 多人德州扑克
 
 多人德州扑克
-​​ 在线体验地址 ​​
-https://distributed-texasholdem.onrender.com（由于学生身份，我使用了免费托管方案，网站启动时可能需要30秒左右的冷加载时间）
 
 基于 `socket.io`、`Node.js` 和 `express` 实现的分布式扑克游戏，支持多房间跨设备实时对战。
 
